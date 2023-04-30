@@ -1,0 +1,119 @@
+@keyframes line {
+  from { opacity: 1; width: 57px; left: 50px}
+  to { opacity: 0; width: 0; left: 105px}
+}
+
+@keyframes palec {
+  from { margin-left: 0; opacity: 1; }
+  to { margin-left: 110px; opacity: 0; }
+}
+
+@keyframes ellipse {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.body {
+  background-image: url(./images/123.png);
+  margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+  flex-direction: column;
+  gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle {
+  width: 200px;
+}
+.slider-container {
+	position: relative;
+}
+
+.slider-container .bar {
+	position: absolute;
+	z-index: 1;
+	top: -23px;
+	width: 100%;
+	height: 60px;
+  padding-right: 13px;
+  border: 2px solid #FF8521;
+	border-radius: 70px;
+	overflow: hidden;
+}
+
+.slider-container .bar .title {
+  position: absolute;
+  z-index: 500;
+  top: 13px;
+  left: 90px;
+  color: white;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.slider-container .slider {
+	position: relative;
+	z-index: 2;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+}
+
+.slider-container .slider::-webkit-slider-thumb {
+  margin: 7px;
+	-webkit-appearance: none;
+	width: 47px;
+	height: 47px;
+  opacity: var(--opacityIcon);
+	background-image: var(--linkIcon, url('./images/icon.svg'));
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+	transition: .3s ease-in-out;
+}
+
+.animation {
+  width: 130px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.palec {
+  position: absolute;
+  animation: 1.3s infinite palec;
+}
+
+.line {
+  overflow: hidden;
+  top: 13px;
+  left: 30px;
+  position: absolute;
+  width: 53px;
+  height: 0;
+  border: 1px dashed #FF8521;
+  animation: 1.3s infinite line;
+}
+
+.ellipse {
+  left: 107px;
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1.7px dashed #FF8521;
+  margin-bottom: 5px;
+  animation: 1.3s infinite ellipse;
+}
+
