@@ -1,6 +1,6 @@
 @keyframes line {
-  from { opacity: 1; width: 57px; left: 50px}
-  to { opacity: 0; width: 0; left: 105px}
+  from { opacity: 1; width: 70px; left: 100}
+  to { opacity: 0; width: 0; left: 110px}
 }
 
 @keyframes palec {
@@ -99,7 +99,7 @@
   top: 13px;
   left: 30px;
   position: absolute;
-  width: 53px;
+  width: 73px;
   height: 0;
   border: 1px dashed #FF8521;
   animation: 1.3s infinite line;
