@@ -3,7 +3,7 @@
 sliderElement = document.querySelector('.slider'); // Slider
 textElement = document.querySelector('.title') // Text
 buttonElement = document.querySelector('.bar') // Button
-pdfElement = document.querySelector('.pdf'); // PDF
+pdfElement = document.querySelectorAll('.pages'); // PDF
 
 // Event Listeners
 
@@ -11,7 +11,7 @@ sliderElement.addEventListener('touchmove', () => {
   console.log(sliderElement.value)
   if (sliderElement.value == 99) {
     // pdfElement.classList.remove("pdf")
-    pdfElement.classList.add("pdf_show")
+    pdfElement.classList.add("pages_show")
   } else {
     calculateStyles(sliderElement.value)
   }
