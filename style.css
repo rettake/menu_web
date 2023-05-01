@@ -33,6 +33,7 @@
   width: 200px;
   transition: margin-right .8s ease-in;
   margin-bottom: 50px;
+  margin-right: 10px;
 }
 
 .middle_hide {
@@ -98,7 +99,7 @@
   width: 130px;
   position: relative;
   margin-bottom: 50px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .palec {
