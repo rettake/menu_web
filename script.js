@@ -23,6 +23,18 @@ sliderElement.addEventListener('touchmove', () => {
   }
 })
 
+sliderElement.addEventListener('change', () => {
+  console.log(sliderElement.value)
+  if (sliderElement.value == 99) {
+    pdfElement.classList.add("pages_show");
+    animElement.style.opacity = 0;
+    middleElement.classList.add('middle_hide');
+    bodyElement.classList.remove('overflow_hide');
+  } else {
+    calculateStyles(sliderElement.value)
+  }
+})
+
 buttonBackElement.addEventListener('click', () => {
   sliderElement.value = 0;
   calculateStyles(sliderElement.value);
