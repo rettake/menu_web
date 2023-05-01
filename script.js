@@ -43,6 +43,8 @@ buttonBackElement.addEventListener('click', () => {
   animElement.style.opacity = 1;
   middleElement.classList.remove('middle_hide');
   bodyElement.classList.add('overflow_hide');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 })
 
 // Functions
