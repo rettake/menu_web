@@ -25,9 +25,19 @@
 	align-items: center;
 }
 
+.overflow_hide {
+  overflow: hidden;
+}
+
 .middle {
   width: 200px;
+  transition: margin-right .8s ease-in;
 }
+
+.middle_hide {
+  margin-right: 500px;
+}
+
 .slider-container {
 	position: relative;
 }
@@ -123,13 +133,22 @@
   top: 0;
   opacity: 0;
   width: 100vw;
-  height: 100vh;
-  transition: opacity .4s ease-in;
+  min-height: 100vh;
+  transition: opacity 1.3s ease-in;
 }
 
 .pages_show {
   opacity: 1;
   z-index: 1000;
+}
+
+.page {
+  margin-bottom: 15px;
+  max-width: 100vw;
+}
+
+.page:last-child {
+  margin-bottom: 0;
 }
 
 

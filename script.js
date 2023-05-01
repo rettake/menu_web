@@ -1,17 +1,22 @@
 // vars
 
+bodyElement = document.querySelector('.body') // Body
 sliderElement = document.querySelector('.slider'); // Slider
 textElement = document.querySelector('.title') // Text
 buttonElement = document.querySelector('.bar') // Button
-pdfElement = document.querySelectorAll('.pages'); // PDF
+pdfElement = document.querySelector('.pages'); // PDF
+animElement = document.querySelector('.animation'); // Animation
+middleElement = document.querySelector('.middle') // Middle
 
 // Event Listeners
 
 sliderElement.addEventListener('touchmove', () => {
   console.log(sliderElement.value)
   if (sliderElement.value == 99) {
-    // pdfElement.classList.remove("pdf")
-    pdfElement.classList.add("pages_show")
+    pdfElement.classList.add("pages_show");
+    animElement.style.opacity = 0;
+    middleElement.classList.add('middle_hide');
+    bodyElement.classList.remove('overflow_hide');
   } else {
     calculateStyles(sliderElement.value)
   }
