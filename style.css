@@ -117,3 +117,20 @@
   animation: 1.3s infinite ellipse;
 }
 
+.pdf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity .4s ease-in;
+}
+
+.pdf_show {
+  opacity: 1;
+  z-index: 1000;
+}
+
+
+
