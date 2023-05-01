@@ -151,5 +151,12 @@
   margin-bottom: 0;
 }
 
+.button_back {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+}
 
 

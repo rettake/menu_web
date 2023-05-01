@@ -7,6 +7,7 @@ buttonElement = document.querySelector('.bar') // Button
 pdfElement = document.querySelector('.pages'); // PDF
 animElement = document.querySelector('.animation'); // Animation
 middleElement = document.querySelector('.middle') // Middle
+buttonBackElement = document.querySelector(".button_back") // Button
 
 // Event Listeners
 
@@ -20,6 +21,16 @@ sliderElement.addEventListener('touchmove', () => {
   } else {
     calculateStyles(sliderElement.value)
   }
+})
+
+buttonBackElement.addEventListener('click', () => {
+  sliderElement.value = 0;
+  calculateStyles(sliderElement.value);
+
+  pdfElement.classList.remove("pages_show");
+  animElement.style.opacity = 1;
+  middleElement.classList.remove('middle_hide');
+  bodyElement.classList.add('overflow_hide');
 })
 
 // Functions
