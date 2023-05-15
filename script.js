@@ -50,10 +50,6 @@ sliderElement[0].addEventListener("change", () => {
 sliderElement[1].addEventListener("touchmove", () => {
   console.log(sliderElement[1].value);
   if (sliderElement[1].value == 99) {
-    sliderElement[0].value = 0;
-    sliderElement[1].value = 0;
-    calculateStyles(sliderElement[0].value, 0);
-    calculateStyles(sliderElement[1].value, 1);
     hiddenLinkElement.click();
   } else {
     calculateStyles(sliderElement[1].value, 1);
@@ -63,10 +59,6 @@ sliderElement[1].addEventListener("touchmove", () => {
 sliderElement[1].addEventListener("change", () => {
   console.log(sliderElement[1].value);
   if (sliderElement[1].value == 99) {
-    sliderElement[0].value = 0;
-    sliderElement[1].value = 0;
-    calculateStyles(sliderElement[0].value, 0);
-    calculateStyles(sliderElement[1].value, 1);
     hiddenLinkElement.click();
   } else {
     calculateStyles(sliderElement[1].value, 1);
